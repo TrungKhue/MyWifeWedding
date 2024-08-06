@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Mời</title>
+    <link rel="icon"
+        href="https://scontent.fdad3-5.fna.fbcdn.net/v/t39.30808-6/453410327_1029096058837582_5371467558174778392_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEWlRXJNKCleI-of8LzLDY4OpAkVDU3z5E6kCRUNTfPkch3lMFJXj_n5Am9HaJpLuWbJP9xZ79PpTue9csiWY5O&_nc_ohc=u09Bzt95JLYQ7kNvgHRzybm&_nc_ht=scontent.fdad3-5.fna&gid=AjzgkrPBPSskgBaKxw04SU5&oh=00_AYAr9arbji_lUlrcdASjwW-DOyRGQ_BNLFieaEzucrvTZA&oe=66B01E94"
+        type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fbf9fa;
+        }
+
+        .card {
+            background-color: white;
+            border: 5px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            height: 500px;
+            position: relative;
+        }
+
+        .card img {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image-container .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(14, 14, 14, 0.7);
+            font-size: 1.2em;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .image-container .no_overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 150%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(27, 211, 221, 0.7);
+            font-size: 1.2em;
+            opacity: 1;
+            transition: opacity 0.3s;
+        }
+
+        .image-container:hover .overlay {
+            opacity: 1;
+        }
+
+        .image-container:hover .no_overlay {
+            opacity: 0;
+        }
+
+        .image-container:hover img {
+            opacity: 0.5;
+        }
+
+        .title {
+            font-size: 2em;
+            color: #b3228f;
+            margin: 20px 0;
+            font-family: 'Brush Script MT', cursive;
+        }
+
+        .footer {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 20px;
+            font-family: 'Brush Script MT', cursive;
+        }
+
+        .invite-text {
+            font-size: 1.8em;
+            color: #b3228f;
+            margin-top: 20px;
+            font-family: 'Brush Script MT', cursive;
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        .name-text {
+            font-size: 2em;
+            color: #b3228f;
+            margin-top: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: right;
+            margin-left: 12px;
+            margin-right: 30px;
+        }
+
+        .footer-left {
+            font-size: 0.9em;
+            color: #423843;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-family: 'Brush Script MT', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="title">Thiệp Mời</div>
+        <div class="image-container"><a href="https://trungkhue.github.io/MyWifeWedding/">
+                <img src="large.webp" alt="Wedding Image">
+                <div class="overlay">Nhấn vào đây</div>
+                <div class="no_overlay">Nhấn vào đây</div>
+            </a>
+        </div>
+        <div class="invite-text">Kính mời </div>
+        <div class="name-text">VC Em Đỗ Lệ Linh</div>
+        <div class="footer-left"><a href="https://www.facebook.com/trungkhue.13" style="color: #c15c34;">Mr. Khuê</a>
+        </div>
+    </div>
+</body>
+
+</html>
